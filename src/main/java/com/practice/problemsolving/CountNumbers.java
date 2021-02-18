@@ -9,6 +9,16 @@ package com.practice.problemsolving;
 
 public class CountNumbers {
     public static void main(String[] args) {
-
+    	System.out.println(countDivisable(3, 15));
     }
+    public static Integer countDivisable(Integer x, Integer y) {
+		int count = 0;
+		for (int n = x; n < y; n++) {
+			if (n % x == 0)
+				count++;
+		}
+
+		return count;
+
+	}
 }
